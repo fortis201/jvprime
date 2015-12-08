@@ -1,5 +1,7 @@
-.redSquare {
-	height: 10rem;
-	width: 10rem;
+.element {
+	.row;
+}
+
+.row {
 	background-color: red;
 }
