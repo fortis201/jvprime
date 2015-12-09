@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+
+#navigation {
+  min-height: 5rem;
+  width: 100%;
+  /*position: fixed;*/
+}
+
+.yellow {
+  min-height: 500px;
+  min-width: 100%;
+  background-color: yellow;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.blue {
+  min-height: 500px;
+  min-width: 100%;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+#footer {
+  width: 100%;
+  min-height: 11rem;
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  background: rgb(0,0,0);
+  color: white;
+  text-align: center;
+}
+
+#footer h1 {
+}
