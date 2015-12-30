@@ -1,23 +1,32 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This web portfolio was created by J.V. Estolas">
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/parallax.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-        <!-- Less CSS -->
-        <link rel="stylesheet" type="text/css" href="css/styles.less">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+        <!-- Booststrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/parallax.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -27,97 +36,110 @@
         <![endif]-->
 
         <!-- Navigation -->
-        <section id="navigation">
-            <nav class="teal">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">J.V. Estolas</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                    </ul>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <div class="navbar-header"> <!-- col-sm-3 col-sm-offset-1"> -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <!-- <span class="sr-only">Toggle navigation</span> -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><h2>J.V. Estolas</h2></a>
                 </div>
-            </nav>
-        </section>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+
+                <!-- <a href="#" class="brand-logo">J.V. Estolas</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul> -->
+            </div>
+        </nav>
         <!-- End of Navigation -->
 
         <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="parallax">
 
-        <section id="main">
-            <div class="parallax">
-                <div id="group0" class="parallax__group">
-                    <div class="parallax__layer parallax__layer--base">
-                        <h1 class="title">Zero BASE layer !!!</h1>
-                    </div>
-<!--                     <div class="parallax__layer parallax__layer--base">
-                        <h1 class="title">Zero Top BASE layer</h1>
+                        <div id="baseHeading" class="parallax__shorter__group">
+                            <div class="parallax__layer parallax__layer--base">                           
+                                <span id="about"> </span>
+                                <div id="myHeading" class="col-sm-4 col-sm-offset-4">
+                                    <img id="myPic" class="img-responsive img-circle" src="img/jv.jpg" alt="J.V. Estolas">
+                                </div>
+
+                                <h1 id="myName" class="col-sm-8 col-sm-offset-2">Joseph Victor Tan Estolas</h1>
+                            </div>
+
+                            <div class="parallax__layer parallax__layer--back"></div>
+                        </div>
+
+                        <div id="group0" class="parallax__taller__group">
+                            <div class="parallax__layer parallax__layer--base">
+                                <h1>more content here</h1>
+                            </div>
+                        </div>
+
+                        <div id="group1" class="parallax__taller__group">
+                            <div class="parallax__layer parallax__layer--back"></div>
+                        </div>
+
+                        <div id="group2" class="parallax__taller__group">
+                            <div class="parallax__layer parallax__layer--base">
+                                <span id="projects"> </span>
+                                <h1 class="title">GRP2 BASE layer !!!</h1>
+                                <a name="about"><h1>About Me</h1></a>
+                            </div>
+                        </div>
+
+                        <div id="group3" class="parallax__taller__group">
+                            <div class="parallax__layer parallax__layer--back">
+                            </div>
+                            <div class="parallax__layer parallax__layer--base">
+                            </div>
+                        </div>
+
+                        <div id="group4" class="parallax__taller__group">
+                            <div class="parallax__layer parallax__layer--base">
+                                <h1 class="title">Grp4 BASE layer !!!</h1>
+                            </div>
+                        </div>
+
+        <!--                 <div id="group5" class="parallax__group">
+                            <div class="parallax__layer parallax__layer--base">
+                                <h1 class="title">Grp5 BACK LAYER</h1>
+                            </div>
+                        </div>                    
                     </div> -->
+                        </div>
+                    </div>
                 </div>
-
-                <div id="group1" class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back">
-                        <h1 class="title">1 BACK LAYER GROUP 1</h1>
-                    </div>
-
-<!--                     <div class="parallax__layer parallax__layer--deep">
-                        <h1 class="title">GRP 1 DEEP layer for parallax</h1>
-                    </div> -->
-                </div>
-
-                <div id="group2" class="parallax__group">
-<!--                     <div class="parallax__layer parallax__layer--fore">
-                        <h1 class="title">GRP2 FORE layer !!!</h1>
-                    </div> -->
-                    <div class="parallax__layer parallax__layer--base">
-                        <h1 class="title">GRP2 BASE layer !!!</h1>
-                    </div>
-                </div>
-
-                <div id="group3" class="parallax__group">
-<!--                     <div class="parallax__layer parallax__layer--base">
-                        <h2 class="title">GRP4 base LAYER</h2>
-                    </div> -->
-                    <div class="parallax__layer parallax__layer--back">
-                        <h2 class="title">GRP3 back LAYER</h2>
-                    </div>
-<!--                     <div class="parallax__layer parallax__layer--deep">
-                        <h2 class="title">GRP4 DEEP LAYER</h2>
-                    </div> -->
-                </div>
-
-                <div id="group4" class="parallax__group">
-<!--                     <div class="parallax__layer parallax__smaller__group parallax__layer--fore">
-                        <h1 class="title">GRP4 smaller FORE layer !!!</h1>
-                    </div> -->
-                    <div class="parallax__layer parallax__layer--base">
-                        <h1 class="title">Grp4 BASE layer !!!</h1>
-                    </div>
-                </div>
-
-                <div id="group5" class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back">
-                        <h1 class="title">Grp5 BACK LAYER</h1>
-                    </div>
-                </div>                    
             </div>
-        </section>
-
-        <footer id="footer">
+        </div>
+        <div id="footer">
             <h1>footer</h1>
-        </footer>
+        </div>
 
         <!-- End of Main Content -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <!-- Materialize -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" type="text/css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jqScript.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
