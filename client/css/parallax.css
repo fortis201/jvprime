@@ -15,14 +15,21 @@
 
 .parallax__taller__group {  
   position: relative;
-  height: 33em; /* Adjust this to change the height of grouped layers */
+  height: 60em; /* Adjust this to change the height of grouped layers */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 .parallax__shorter__group {  
   position: relative;
-  height: 20em;
+  height: 40em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__heading__group {  
+  position: relative;
+  height: 60em;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -37,12 +44,6 @@
   transform-origin-x: 100%;
 }
 
-/*.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
-}*/
-
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -50,8 +51,8 @@
 }
 
 .parallax__layer--back {
-  -webkit-transform: translate3d(0, 0,-190px) scale(2);
-  transform: translate3d(0, 0, -190px) scale(2);
+  -webkit-transform: translate3d(0, 0,-300px) scale(2);
+  transform: translate3d(0, 0, -300px) scale(2);
   z-index: 3;
 }
 
@@ -74,23 +75,6 @@ body, html {
   padding:0;
 }
 
-body {
-  font: 100% / 1.5 Arial;
-}
-
-.parallax {
-  font-size: 200%;
-}
-
-/*.title {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}*/
-
 /******************/
 /* Group Styles */
 /******************/
@@ -106,7 +90,6 @@ body {
 
 #baseHeading .parallax__layer--back {
   background: url("../img/dummy_bg_0.jpg");
-  top: -50%;
 }
 
 #group0 .parallax__layer--base {
@@ -120,7 +103,8 @@ body {
 
 #group1 .parallax__layer--back { 
   background: url("../img/dummy_bg_1.jpg");
-  background-color: black;
+  height: 55em;
+  width: auto;
   background-repeat: no-repeat;
   color: white;
 }
@@ -130,7 +114,7 @@ body {
 }
 
 #group2 .parallax__layer--base {     
-  background: black;
+  background: olive;
   color: white;
 }
 
@@ -140,12 +124,9 @@ body {
 
 #group3 .parallax__layer--back {
   background: url("../img/dummy_bg_2.jpg");
-  color: blue;
-}
-
-#group3 .parallax__layer--base {
-  background: rgb(50, 50, 50);
-  opacity: 0;
+  height: 55em;
+  width: auto;
+  background-repeat: no-repeat;
 }
 
 #group4 {
