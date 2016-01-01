@@ -1,0 +1,163 @@
+/******************/
+/* Parallax base */
+/******************/
+
+.parallax {
+  height: 1080px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+
+.parallax__taller__group {  
+  position: relative;
+  height: 60em; /* Adjust this to change the height of grouped layers */
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__shorter__group {  
+  position: relative;
+  height: 40em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+.parallax__layer--baseBg {
+  -webkit-transform: translate3d(-130px, 0, -150px) scale(1.3);
+  transform: translate3d(-130px, 0, -150px) scale(1.3);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+/******************/
+/* Parallax styles */
+/******************/
+
+body, html {
+  overflow: hidden;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+/******************/
+/* Group Styles */
+/******************/
+
+#group0, #baseHeading, #group2, #group4 {
+  z-index: 5;
+}
+
+#group1, #group3 {
+  z-index: 3;
+}
+
+#baseHeading .parallax__layer--base {
+  color: white;
+  background-color: transparent;
+  /*background: url("../img/transparent_star_bg.png");*/
+}
+
+#baseHeading .parallax__layer--baseBg {
+  z-index: -10;
+  background-color: transparent;
+  background: url("../img/transparent_star_bg.png");
+  background-repeat: repeat;
+}
+
+#baseHeading .parallax__layer--back {
+  background: url("../img/dummy_bg_0.jpg");
+}
+
+#group0 .parallax__layer--base {
+  color: white;
+  background-color: black;
+}
+
+#group1 .parallax__layer--back { 
+  background: url("../img/dummy_bg_1.png");
+  height: 55em;
+  width: auto;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#group1 .parallax__layer--baseBg {
+  z-index: -10;
+  background-color: transparent;
+  background: url("../img/transparent_star_bg3.png");
+  background-repeat: repeat;
+}
+
+#group2 .parallax__layer--base {     
+  background: black;
+  color: white;
+}
+
+#group3 .parallax__layer--back {
+  background: url("../img/dummy_bg_2.png");
+  height: 55em;
+  width: auto;
+  background-repeat: no-repeat;
+}
+
+#group3 .parallax__layer--baseBg {
+  z-index: -10;
+  background-color: transparent;
+  background: url("../img/transparent_star_bg3.png");
+  background-repeat: repeat;
+}
+
+#group4 .parallax__layer--base {
+  background: black;
+  color: white;
+}
+
+/*#group5 {
+  z-index: 0;
+}
+
+#group5 .parallax__layer--back{
+  background: url("http://dummy-images.com/abstract/dummy-1280x960-DesiccationCracks.jpg");
+}*/
+
+
+
+
+
+
+
