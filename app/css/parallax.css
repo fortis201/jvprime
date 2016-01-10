@@ -15,14 +15,14 @@
 
 .parallax__taller__group {  
   position: relative;
-  height: 60em; /* Adjust this to change the height of grouped layers */
+  height: 1280px;  /* Compatibility height for browsers that don't support Media Queries */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 .parallax__shorter__group {  
   position: relative;
-  height: 40em;
+  height: 800px; /* Compatibility height for browsers that don't support Media Queries */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -74,6 +74,26 @@ body, html {
   padding:0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .parallax__taller__group {
+    min-height: 1200px;
+  }
+
+  .parallax__shorter__group {
+    min-height: 640px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .parallax__taller__group {
+    min-height: 60em;
+  }
+
+  .parallax__shorter__group {
+    min-height: 40em;
+  }
+}
+
 /******************/
 /* Group Styles */
 /******************/
@@ -111,7 +131,7 @@ body, html {
 #group1 .parallax__layer--back { 
   background: url("../img/dummy_bg_1.png");
   height: 55em;
-  width: auto;
+  width: 100%;
   background-repeat: no-repeat;
   color: white;
 }
@@ -131,7 +151,7 @@ body, html {
 #group3 .parallax__layer--back {
   background: url("../img/dummy_bg_2.png");
   height: 55em;
-  width: auto;
+  width: 100%;
   background-repeat: no-repeat;
 }
 
